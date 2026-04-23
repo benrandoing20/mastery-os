@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.turbo/
+.env
+.env.local
+*.tsbuildinfo
+apps/web/dist
+apps/api/dist
+.DS_Store

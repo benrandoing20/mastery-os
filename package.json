@@ -1,0 +1,17 @@
+{
+  "name": "mastery-os",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"pnpm --filter @mastery-os/api dev\" \"pnpm --filter @mastery-os/web dev\"",
+    "build": "pnpm --filter @mastery-os/web build",
+    "typecheck": "pnpm -r typecheck",
+    "seed": "tsx supabase/seed/seed.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "concurrently": "^8.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.4.0"
+  }
+}
